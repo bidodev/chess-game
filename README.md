@@ -1,5 +1,5 @@
-# chemistry-periodic-table
+# Chess Game
 
-CSS Selectors Exercise
+## Purpose of the Exercise
 
-Visit the Final Versions: https://bidodev.github.io/chemistry-periodic-table/
+Training with CSS selectors **:nth-child()** and background-img

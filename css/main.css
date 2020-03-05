@@ -3,24 +3,44 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
 }
 
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.chess {
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(white));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), white);
+  background-size: 10rem;
+}
+
 table {
-  margin: 2rem auto;
-  width: 80vw;
-  height: 80vh;
-  border: black solid 1px;
+  margin: 5rem auto;
   border-spacing: 0;
+  border: 2px solid black;
+}
+
+table td {
+  width: 8rem;
+  height: 8rem;
+  border: 1px solid black;
+}
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+  background: #fff;
 }
 
 tr:nth-child(odd) td:nth-child(even),
 tr:nth-child(even) td:nth-child(odd) {
-  background: black;
+  background: #000;
 }
 /*# sourceMappingURL=main.css.map */
